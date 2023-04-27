@@ -1,0 +1,123 @@
+------------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/0/french_english
+-----------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/3/english_french
+
+
+-----------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/1/german_english
+-----------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/4/english_german
+-----------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/2/spanish_english
+-----------------
+checkpoint/vyasapoorv/tmp/demo_audios_cross/5/english_spanish
+
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="cross-lingual-transfer" style="text-align: center;"> Cross-Lingual Style Transfer</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Prompt Text</th>
+			<th style="text-align: center">Prompt</th>
+			<th style="text-align: center">Target</th>
+			<th style="text-align: center">Sample #1</th>
+			<th style="text-align: center">Sample #2</th>
+			</tr>
+			</thead>
+			<tbody>
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> French to English </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+poupée si je voulais la revoir je te donnerais à l'aphrodite comme le plus cher de mes cadeaux mais je veux penser qu'elle est tout à fait morte
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/0/french_english/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/0/french_english/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/0/french_english/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/0/french_english/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> English to French </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "poupée si je voulais la revoir je te donnerais à l'aphrodite comme le plus cher de mes cadeaux mais je veux penser qu'elle est tout à fait morte"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/3/english_french/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/3/english_french/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/3/english_french/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/3/english_french/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> German to English </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+er wohnte mit den ältesten hirten die höhe am roten meer war sein er trug in äthiopiens syrten zum obelisk den felsenstein
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/1/german_english/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/1/german_english/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/1/german_english/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/1/german_english/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> English to German </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "er wohnte mit den ältesten hirten die höhe am roten meer war sein er trug in äthiopiens syrten zum obelisk den felsenstein"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/4/english_german/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/4/english_german/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/4/english_german/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/4/english_german/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> Spanish to English </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+yo señores por mis pecados he estudiado cánones en salamanca y pícome algún tanto de decir mi razón con palabras claras llanas y significantes
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/2/spanish_english/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/2/spanish_english/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/2/spanish_english/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/2/spanish_english/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="3"> English to Spanish </font></td> </tr>
+       <tr> <td colspan="5" style="text-align: center"><font size="2"> Target Text:
+                "yo señores por mis pecados he estudiado cánones en salamanca y pícome algún tanto de decir mi razón con palabras claras llanas y significantes"
+       </font></td> </tr>
+<tr>
+<td style="text-align: center;vertical-align:middle;"><font size="1"> 
+among these were a man and a lady the latter attended by a handsome young woman who were all three sufficiently striking in appearance to attract some notice in the throng
+</font>
+</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/5/english_spanish/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/5/english_spanish/target.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/5/english_spanish/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="demo_audios/cross_lingual/5/english_spanish/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
