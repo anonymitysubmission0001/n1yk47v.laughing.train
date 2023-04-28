@@ -2,9 +2,9 @@
 <html>
 
 <head>
+        <meta name="robots" content="noindex" />
 	<meta charset="utf-8">
 	<meta name="generator" content="Hugo 0.88.1" />
-	<meta name="robots" content="noindex" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
@@ -42,24 +42,25 @@
 
 	<p>
 		<b>Abstract.</b>
-		We introduce VoiceBox, the most versatile and efficient multilingual
-		text-conditioned speech generative model at scale available. VoiceBox is a
-		text-guided non-autoregressive flow-matching model that can infill speech
-		at any position given any audio context. VoiceBox can be used as magic
-		eraser for speech to remove short term noise, such as the sound of a
-		barking dog in the backgroud, or as a speech editor to correct misspoken
-		words in the recording. VoiceBox can also transfer audio style from one
-		recording to another across languages. When paired with a speech
-		translation model, it can generate speech translation in the orignal
-		speaker's voice. Moreover, VoiceBox can also generate diverse speech
-		samples for the same text with various voices, speaking styles, background
-		noises, room acoustics. With such synthetic data, we can train a speech
-		recognition model that performs almost as good as training on real data,
-		whereas previous attempts of using synthetic data lead to almost 15%-75%
-		word error rate degradation. 
-		Efficiency wise, VoiceBox generates speech with a real time factor of
-		XXX for a 20 second audio, which is YYY times faster than autoregressive
-		models of the same sizes.
+		Large-scale generative models such as GPT and DALL-E have revolutionized
+        natural language processing and computer vision research. These models not only
+        generate high fidelity text or image outputs, but are also generalists which
+        can solve tasks not explicitly taught, such as passing law exams or performing
+        arithmetic calculation. In contrast, speech generative models are still
+        primitive in terms of scale and task generalization abilities. In this paper,
+        we present Voicebox, the most versatile and efficient multilingual
+        text-conditioned generative model for speech at scale. Voicebox is a
+        non-autoregressive flow-matching model trained to infill speech, given audio
+        context and text. We train Voicebox on over 50K hours of in-the-wild
+        monolingual and multilingual datasets without any pre-processing and show that
+        it is highly scalable. Similar to large language models, Voicebox can perform
+        many different tasks through in-context learning, but is more flexible because
+        it can also condition on future context due to the non-autoregressive nature.
+        Specifically, Voicebox can be used for cross-lingual zero-shot text-to15 speech
+        synthesis (TTS), noise removal, content editing, style conversion, and diverse
+        sample generation. Qualitatively, Voicebox outperforms the state-of-the-art
+        VALL-E on zero-shot TTS in terms of both intelligibility (5.9% vs 2.3% word
+        error rates) and audio similarity (0.580 vs 0.658) while being 20 times faster.
 		<br><br>
 		This page is for <b>research demonstration purposes</b> only.
     </p>
@@ -172,28 +173,28 @@
 			</thead>
 			<tbody>
 <tr><td style="text-align: left;vertical-align:middle;width: 500px">Every plant in the grass is set formally grows perfectly and may be realized completely</td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_regr_5_f.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_regr_48_m.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_fm_41_lazy.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_fm_18_f_emphasis.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_fm_28_micnoise.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/0/tts_0_fm_10_m_amuse.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 <tr><td style="text-align: left;vertical-align:middle;width: 500px">His conduct and presence of mind in this emergence appeared conspicuous</td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_regr_7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_regr_21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_fm_7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_fm_46_urge.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_fm_38_mysterious.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/1/tts_1_fm_22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
-<tr><td style="text-align: left;vertical-align:middle;width: 500px">I made her for only twenty oars because i thought few men would follow me for i was young fifteen years old</td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<tr><td style="text-align: left;vertical-align:middle;width: 500px">This is a voicebox demo</td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_regr_23.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_fm_9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_regr_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_fm_34.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_fm_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" style="width: 150px;"><source src="audios/tts/2/tts_2_fm_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 </tr>
 
 
@@ -204,7 +205,7 @@
 
 
     <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-        <h2 id="my-id" style="text-align: center;">Voice Prompting (3 sec)</h2>
+        <h2 id="my-id" style="text-align: center;">Style transfer (3 sec prompt)</h2>
         <div class="table-responsive pt-3">
             <table class="table table-hover pt-2">
                 <thead>
@@ -527,7 +528,7 @@
     </div>
 
 
-
+    <!--
     <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
         <h2 id="my-id" style="text-align: center;">Voice Prompting (6 sec)</h2>
         <div class="table-responsive pt-3">
@@ -1175,7 +1176,8 @@
             </table>
         </div>
     </div>
- 
+    -->
+
     <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
         <h2 id="my-id" style="text-align: center;">Cross-Lingual Style Transfer</h2>
         <div class="table-responsive pt-3">
